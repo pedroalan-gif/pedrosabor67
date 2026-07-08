@@ -3,128 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Paraná</title>
+    <title>Agrinho 2026 - Agro Forte, Futuro Sustentável no Paraná</title>
 
     <style>
-        body{
-            font-family: Arial, sans-serif;
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-            line-height: 1.6;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
-        h1{
-            text-align: center;
-            color: rgb(0, 0, 0);
+        body{
+            background:#f4f9f4;
+            color:#333;
+            line-height:1.7;
+        }
+
+        header{
+            background:linear-gradient(90deg,#2e7d32,#66bb6a);
+            color:white;
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        nav{
+            background:#1b5e20;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#ffeb3b;
+        }
+
+        section{
+            max-width:1100px;
+            margin:auto;
+            padding:40px 20px;
         }
 
         h2{
-            color: #000000;
-            margin-top: 30px;
+            color:#2e7d32;
+            margin-bottom:15px;
         }
 
-        p{
-            text-align: justify;
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+            margin-top:20px;
         }
 
-        .imagem{
-            text-align: center;
-            margin: 20px 0;
+        .card{
+            background:white;
+            border-radius:12px;
+            padding:20px;
+            box-shadow:0 4px 10px rgba(0,0,0,.15);
+            transition:.3s;
         }
 
-        .imagem img{
-            max-width: 100%;
-            width: 500px;
-            border-radius: 10px;
+        .card:hover{
+            transform:translateY(-6px);
+        }
+
+        .banner{
+            width:100%;
+            border-radius:15px;
+            margin-top:20px;
+        }
+
+        footer{
+            background:#1b5e20;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        button{
+            background:#2e7d32;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            border-radius:8px;
+            cursor:pointer;
+            margin-top:20px;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#1b5e20;
+        }
+
+        #mensagem{
+            margin-top:20px;
+            font-weight:bold;
+            color:#2e7d32;
         }
     </style>
 </head>
-
 <body>
 
-    <h1>Agro Paraná</h1>
+<header>
+    <h1>🌱 Agrinho 2026</h1>
+    <h2>Agro Forte, Futuro Sustentável no Paraná</h2>
+    <p>Produzir com responsabilidade é garantir qualidade de vida para as próximas gerações.</p>
+</header>
+
+<nav>
+    <a href="#agro">O Agro</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+    <a href="#parana">Paraná</a>
+    <a href="#acoes">Ações</a>
+</nav>
+
+<section id="agro">
+    <h2>🌾 O Agro é Essencial</h2>
 
     <p>
-        O agronegócio paranaense é uma das principais potências do país,
-        representando cerca de 35% do PIB do estado. O Paraná é líder
-        nacional na produção de grãos e proteína animal, contando com
-        forte cooperativismo e alta tecnologia no campo.
+        O agronegócio é um dos principais motores da economia do Paraná e do Brasil.
+        Além de produzir alimentos, fibras e energia, gera empregos, impulsiona a
+        tecnologia no campo e contribui para o desenvolvimento sustentável.
     </p>
 
-    <div class="imagem">
-        <!-- COLE A PRIMEIRA IMAGEM AQUI -->
-        <img src="SUA_IMAGEM_1" alt="Agronegócio Paranaense">
+    <img class="banner"
+    src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1200"
+    alt="Campo agrícola">
+</section>
+
+<section id="sustentabilidade">
+
+    <h2>🌎 Futuro Sustentável</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🌳 Preservação Ambiental</h3>
+            <p>
+                Proteger rios, florestas e nascentes garante equilíbrio ambiental e
+                qualidade de vida.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Uso Consciente da Água</h3>
+            <p>
+                Sistemas modernos de irrigação reduzem desperdícios e aumentam a
+                eficiência da produção.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🚜 Tecnologia no Campo</h3>
+            <p>
+                Máquinas inteligentes, drones e agricultura de precisão aumentam a
+                produtividade preservando os recursos naturais.
+            </p>
+        </div>
+
     </div>
 
-    <h2>Principais Produtos do Agro Paranaense</h2>
+</section>
 
-    <ul>
-        <li>Soja</li>
-        <li>Milho</li>
-        <li>Trigo</li>
-        <li>Cana-de-açúcar</li>
-        <li>Mandioca</li>
-        <li>Feijão</li>
-        <li>Batata</li>
-        <li>Laranja</li>
-        <li>Tomate</li>
-    </ul>
-<img src="data:image/jpeg;base64,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" alt="center">
+<section id="parana">
+
+<h2>📍 Paraná: Referência em Produção</h2>
+
+<p>
+O Paraná é destaque nacional na produção de soja, milho, trigo, feijão,
+frango, suínos e leite. O estado investe em inovação, educação,
+cooperativismo e práticas sustentáveis, mostrando que é possível produzir
+mais com responsabilidade ambiental.
+</p>
+
+</section>
+
+<section id="acoes">
+
+<h2>✅ Como podemos ajudar?</h2>
+
+<ul>
+<li>🌱 Plantar árvores.</li>
+<li>♻️ Reciclar resíduos.</li>
+<li>💧 Economizar água.</li>
+<li>🚜 Valorizar os produtores rurais.</li>
+<li>🌎 Preservar a biodiversidade.</li>
+<li>📚 Incentivar a educação ambiental.</li>
+</ul>
+
+<button onclick="mostrarMensagem()">Clique aqui</button>
+
+<p id="mensagem"></p>
+
+</section>
+
+<footer>
+    <h3>Agrinho 2026</h3>
     <p>
-        O Paraná também é reconhecido pelo forte cooperativismo agrícola,
-        com cooperativas importantes atuando na produção,
-        processamento e exportação de alimentos.
+        Tema: <strong>Agro Forte, Futuro Sustentável no Paraná</strong>
     </p>
-
-    <div class="imagem">
-        <!-- COLE A SEGUNDA IMAGEM AQUI -->
-        <img src="SUA_IMAGEM_2" alt="Produção Agrícola">
-    </div>
-
-    <h2>Regiões de Destaque</h2>
-
     <p>
-        <strong>Palmas:</strong> um dos maiores polos de sementes de soja
-        e líder estadual em batata-semente.
+        Desenvolvido em HTML, CSS e JavaScript.
     </p>
+</footer>
 
-    <p>
-        <strong>Campos Gerais:</strong> forte produção de sementes de soja,
-        trigo e aveia, com infraestrutura avançada de beneficiamento e
-        armazenamento.
-    </p>
-
-    <h2>Agropecuária Paranaense</h2>
-
-    <p>
-        A agropecuária paranaense desempenha papel fundamental no
-        desenvolvimento econômico e social do estado. Reconhecido como
-        uma das maiores potências agrícolas do Brasil, o Paraná se
-        destaca pela produção de grãos, proteínas animais e diversos
-        produtos agroindustriais.
-    </p>
-
-    <p>
-        Entre as principais culturas agrícolas estão a soja, o milho,
-        o trigo e o feijão. Na pecuária, o estado ocupa posição de
-        destaque na produção de carne de frango, suínos e leite.
-    </p>
-
-    <p>
-        Além da importância econômica, a agropecuária gera milhares de
-        empregos e sustenta grande parte das famílias que vivem no meio rural.
-    </p>
-
-    
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV6bZZlAb2fjgd8oCcoQK5BRw32CMgx1liXA&s"
-             alt="Agropecuária Paranaense">
-    </div>
+<script>
+function mostrarMensagem(){
+    document.getElementById("mensagem").innerHTML =
+    "🌱 O futuro sustentável começa com pequenas atitudes. Valorize o campo, preserve a natureza e ajude a construir um Paraná cada vez mais forte!";
+}
+</script>
 
 </body>
 </html>
-<h2>pecuaria parana </h2>
-<p>O Paraná é uma das grandes potências da pecuária nacional, destacando-se pela alta tecnologia, sanidade animal e forte sistema cooperativista. O estado é referência tanto na produção de proteína animal para o consumo interno quanto para a exportação global.</p>
-
-<p>Destaques e Lideranças do SetorFrangos: O Paraná é o maior produtor e exportador de carne de frango do Brasil. O estado responde por mais de 30% do abate nacional.Leite: É a segunda maior bacia leiteira do país, com alta produtividade por animal e forte presença da agricultura familiar.Suínos: Ocupa a vice-liderança nacional na produção de carne suína, impulsionado pelas cooperativas do Oeste e Sudoeste.Gado de Corte: Focado na transição para sistemas intensivos de confinamento e terminação, com melhoramento genético constante.</p>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5LfD1eyUFEf_EXXm0qlarasrLMTXttFLeQ&s" alt="">
